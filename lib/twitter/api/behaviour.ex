@@ -1,4 +1,4 @@
-defmodule Protos.Twitter.API do
+defmodule Protos.Twitter.API.Behaviour do
   alias Protos.Twitter
 
   @callback register(username :: String.t()) :: :ok | :already_taken

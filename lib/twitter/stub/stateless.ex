@@ -1,7 +1,8 @@
-defmodule Protos.Twitter.APIMock do
+defmodule Protos.Twitter.Stub.Stateless do
   alias Protos.Twitter
+  alias Protos.Twitter.API.Behaviour, as: TwitterAPI
 
-  @behaviour Twitter.API
+  @behaviour TwitterAPI
 
   @impl true
   def register(username) when is_binary(username) do
