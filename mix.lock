@@ -1,3 +1,6 @@
 %{
+  "faker": {:hex, :faker, "0.16.0", "1e2cf3e8d60d44a30741fb98118fcac18b2020379c7e00d18f1a005841b2f647", [:mix], [], "hexpm", "fbcb9bf1299dff3c9dd7e50f41802bbc472ffbb84e7656394c8aa913ec315141"},
   "mox": {:hex, :mox, "1.0.0", "4b3c7005173f47ff30641ba044eb0fe67287743eec9bd9545e37f3002b0a9f8b", [:mix], [], "hexpm", "201b0a20b7abdaaab083e9cf97884950f8a30a1350a1da403b3145e213c6f4df"},
+  "norm": {:hex, :norm, "0.13.0", "2c562113f3205e3f195ee288d3bd1ab903743e7e9f3282562c56c61c4d95dec4", [:mix], [{:stream_data, "~> 0.5", [hex: :stream_data, repo: "hexpm", optional: true]}], "hexpm", "447cc96dd2d0e19dcb37c84b5fc0d6842aad69386e846af048046f95561d46d7"},
+  "stream_data": {:hex, :stream_data, "0.5.0", "b27641e58941685c75b353577dc602c9d2c12292dd84babf506c2033cd97893e", [:mix], [], "hexpm", "012bd2eec069ada4db3411f9115ccafa38540a3c78c4c0349f151fc761b9e271"},
 }

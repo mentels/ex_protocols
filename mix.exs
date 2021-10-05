@@ -21,7 +21,10 @@ defmodule Protos.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:mox, "~>1.0", only: :test}
+      {:mox, "~>1.0", only: :test},
+      {:norm, "~>0.13"},
+      {:stream_data, "~>0.5"},
+      {:faker, "~>0.16"}
     ]
   end
 end
