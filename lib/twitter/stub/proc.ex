@@ -1,4 +1,4 @@
-defmodule Protos.Twitter.Stub.Stateful do
+defmodule Protos.Twitter.Stub.Proc do
   defstruct [:pid]
 
   alias Protos.Twitter.User

@@ -16,11 +16,11 @@ defmodule Protos.Twitter.User do
   end
 
   def generator() do
-      :unused
-      |> StreamData.constant()
-      |> StreamData.bind(fn _ ->
-        StreamData.constant(Faker.Internet.user_name())
-      end)
-      |> StreamData.unshrinkable()
+    :unused
+    |> StreamData.constant()
+    |> StreamData.bind(fn _ ->
+      StreamData.constant(Faker.Internet.user_name())
+    end)
+    |> StreamData.unshrinkable()
   end
 end

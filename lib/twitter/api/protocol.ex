@@ -6,8 +6,15 @@ defprotocol Protos.Twitter.API.Protocol do
   def get_by_username(impl, username)
 end
 
-defimpl Protos.Twitter.API.Protocol, for: Protos.Twitter.Stub.Stateful do
-  alias Protos.Twitter.Stub.Stateful, as: Impl
+defimpl Protos.Twitter.API.Protocol, for: Protos.Twitter.Stub.Proc do
+  alias Protos.Twitter.Stub.Proc, as: Impl
+
+  defdelegate register(impl, username), to: Impl
+  defdelegate get_by_username(impl, username), to: Impl
+end
+
+defimpl Protos.Twitter.API.Protocol, for: Protos.Twitter.Stub.ETS do
+  alias Protos.Twitter.Stub.ETS, as: Impl
 
   defdelegate register(impl, username), to: Impl
   defdelegate get_by_username(impl, username), to: Impl
