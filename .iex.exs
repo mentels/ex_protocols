@@ -1,1 +1,2 @@
-alias Protos.Twitter.APIMock, as: Mock
+alias Protos.Twitter.API, as: Twitter
+alias Protos.Twitter.User

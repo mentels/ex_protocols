@@ -4,8 +4,12 @@ defmodule Protos.Twitter.Stub.ETS do
   alias Protos.Twitter.User
 
   def new(opts \\ []) do
-    tid = :ets.new(__MODULE__, [])
+    tid = :ets.new(__MODULE__, opts)
     %__MODULE__{tid: tid}
+  end
+
+  def start_link(opts \\ []) do
+    new(opts)
   end
 
   def register(%{tid: tid}, username) do

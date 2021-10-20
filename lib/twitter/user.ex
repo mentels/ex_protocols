@@ -3,12 +3,23 @@ defmodule Protos.Twitter.User do
 
   require Norm
 
+  @doc """
+  Example:
+
+
+      User.schema |> Norm.gen  |> Enum.take(10)
+  """
   def schema,
     do:
       Norm.schema(%__MODULE__{
         username: Norm.spec(is_binary())
       })
 
+  @doc """
+  Example:
+
+      User.schema_faker |> Norm.gen  |> Enum.take(10)
+  """
   def schema_faker do
     Norm.schema(%__MODULE__{
       username: Norm.with_gen(Norm.spec(is_binary()), generator)

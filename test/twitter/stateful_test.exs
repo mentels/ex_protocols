@@ -9,7 +9,7 @@ defmodule Protos.Twitter.StatefulTest do
   @implementations [ETS, Proc]
 
   for mod <- @implementations do
-    describe "#{inspect mod} stub" do
+    describe "#{inspect(mod)} stub" do
       setup do
         %{impl: unquote(mod).new()}
       end
